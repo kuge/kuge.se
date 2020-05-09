@@ -1,0 +1,35 @@
+$font-base-family: 'Work Sans', sans-serif;
+$font-base-size: 16px;
+
+html {
+  font-size: $font-base-size;
+  font-family: $font-base-family;
+  box-sizing: border-box;
+}
+
+body {
+  // Set a standardized guaranteed line-height of 1, since the default
+  // interpreted value of 'normal' is browser specific
+  // http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+  line-height: 1;
+}
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+// Prevent overflowing of images in fluid containers
+img { max-width: 100%; }
+
+h1, p {
+	color: #2d268f;
+}
+
+h1 {
+	font-size: 5rem;
+	opacity: .75;
+}
+
+p {
+	opacity: .85;
+}
