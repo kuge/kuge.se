@@ -12,8 +12,8 @@ let mix = require("laravel-mix");
  */
 
 mix
-	.js("resources/js/app.js", "public/js")
-	.sass("resources/scss/app.scss", "public/css");
+	.js("resources/js/app.js", "docs/js")
+	.sass("resources/scss/app.scss", "docs/css");
 
 // Full API
 // mix.js(src, output);
@@ -30,12 +30,12 @@ mix
 // mix.combine(files, destination);
 // mix.babel(files, destination); <-- Identical to mix.combine(), but also includes Babel compilation.
 // mix.copy(from, to);
-mix.copyDirectory("resources/html", "public");
+mix.copyDirectory("resources/html", "docs");
 // mix.minify(file);
 // mix.sourceMaps(); // Enable sourcemaps
 // mix.version(); // Enable versioning.
 // mix.disableNotifications();
-mix.setPublicPath("public");
+mix.setPublicPath("docs");
 // mix.setResourceRoot('prefix/for/resource/locators');
 // mix.autoload({}); <-- Will be passed to Webpack's ProvidePlugin.
 // mix.webpackConfig({}); <-- Override webpack.config.js, without editing the file directly.
